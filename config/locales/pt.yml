@@ -2,11 +2,11 @@ pt:
   activerecord:
     models:
       comfy/cms/site: Site
-      comfy/cms/layout: Leiaute
+      comfy/cms/layout: Layout
       comfy/cms/page: Página
       comfy/cms/snippet: Fragmento
       comfy/cms/file: Arquivo
-      comfy/cms/translation: Translation
+      comfy/cms/translation: Tradução
 
     attributes:
       comfy/cms/site:
@@ -17,17 +17,17 @@ pt:
         locale: Idioma
       comfy/cms/layout:
         identifier: Identificador
-        label: Nome do Leiaute
-        app_layout: Leiaute da Aplicação
-        parent_id: Leiaute Pai
+        label: Nome do Layout
+        app_layout: Layout da Aplicação
+        parent_id: Layout Pai
         content: Conteúdo
         css: Stylesheet
         js: Javascript
       comfy/cms/page:
         label: Título
-        layout_id: Leiaute
+        layout_id: Layout
         slug: Identificador
-        full_path: Full path
+        full_path: Caminho completo
         parent_id: Pai
         target_page_id: Redirecionar para a Página
         content: Conteúdo
@@ -44,13 +44,13 @@ pt:
         locale: Language
         label: Label
         layout_id: Layout
-        is_published: Published
+        is_published: Publicado
 
   comfy:
     cms:
       content:
         site_not_found: Site Não Encontrado
-        layout_not_found: Leiaute Não Encontrado
+        layout_not_found: Layout Não Encontrado
         page_not_found: Página Não Encontrada
 
     admin:
@@ -59,7 +59,7 @@ pt:
           site_not_found: Site não encontrado
           seeds_enabled: Os Fixtures do CMS estão ativados. Todas as mudanças feitas aqui serão descartadas.
           sites: Sites
-          layouts: Leiautes
+          layouts: Layouts
           pages: Páginas
           snippets: Fragmentos
           files: Arquivos
@@ -78,7 +78,7 @@ pt:
             select: Selecionar Site
             edit: Editar
             delete: Excluir
-            are_you_sure: Tem certeza que deseja excluir este site?
+            are_you_sure: Tem certeza que deseja remover este site?
           new:
             title: Novo Site
           edit:
